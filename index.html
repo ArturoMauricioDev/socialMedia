@@ -1,23 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Social Media Dashboard</title>
-  </head>
-  <body>
-    Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
-    Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
-    Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
-    Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
-    Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
-  </body>
+</head>
+
+<body>
+    <header>
+        <article>
+            <h2>
+                Social Media Dashboard
+            </h2>
+            <small>
+          Total Followers: 23,004
+        </small>
+        </article>
+        <div>
+            <p>
+                Dark Mode
+            </p>
+            <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        </div>
+    </header>
+    <section class="parent">
+        <section class="child facebook">
+            <div class="container">
+                <div class="container__header">
+                    <figure>
+                        <img src="./images/icon-facebook.svg" alt="facebook">
+                    </figure>
+                    <p>@nathanf</p>
+                </div>
+                <div class="container__main">
+                    <h1>1987</h1>
+                    <h2>Followers</h2>
+                </div>
+                <div class="container__footer">
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <h3>12 Today</h3>
+                </div>
+            </div>
+        </section>
+        <section class="child twitter">
+            <div class="container">
+                <div class="container__header">
+                    <figure>
+                        <img src="./images/icon-twitter.svg" alt="twitter">
+                    </figure>
+                    <p>@nathanf</p>
+                </div>
+                <div class="container__main">
+                    <h1>1044</h1>
+                    <h2>Followers</h2>
+                </div>
+                <div class="container__footer">
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <h3>99 Today</h3>
+                </div>
+            </div>
+        </section>
+        <section class="child instagram">
+            <div class="container">
+                <div class="container__header">
+                    <figure>
+                        <img src="./images/icon-instagram.svg" alt="instagram">
+                    </figure>
+                    <p>@realnathanf</p>
+                </div>
+                <div class="container__main">
+                    <h1>11k</h1>
+                    <h2>Followers</h2>
+                </div>
+                <div class="container__footer">
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <h3>1099 Today</h3>
+                </div>
+            </div>
+        </section>
+        <section class="child youTube">
+            <div class="container">
+                <div class="container__header">
+                    <figure>
+                        <img src="./images/icon-youtube.svg" alt="youTube">
+                    </figure>
+                    <p>Nathan F.</p>
+                </div>
+                <div class="container__main">
+                    <h1>8239</h1>
+                    <h2>Subscribers</h2>
+                </div>
+                <div class="container__footer">
+                    <figure>
+                        <img src="./images/icon-down.svg" alt="">
+                    </figure>
+                    <h3>144 Today</h3>
+                </div>
+            </div>
+        </section>
+    </section>
+    <h2 class="secondaryTitle">
+        Overview - Today
+    </h2>
+    <section class="parentSecondary">
+        <section class="childSecondary">
+            <div>
+                <p class="childSecondary__title">Page Views</p>
+                <figure>
+                    <img src="./images/icon-facebook.svg" alt="facebook">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">87</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <p class="up">3%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary">
+            <div>
+                <p class="childSecondary__title">Likes</p>
+                <figure>
+                    <img src="./images/icon-facebook.svg" alt="facebook">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">52</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-down.svg" alt="">
+                    </figure>
+                    <p class="down">2%</p>
+                </div>
+            </div>
+        </section>
+        <section class=" childSecondary ">
+            <div>
+                <p class="childSecondary__title">Likes</p>
+                <figure>
+                    <img src="./images/icon-instagram.svg " alt="instagram ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">5462</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <p class="ups">2257%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary ">
+            <div>
+                <p class="childSecondary__title">Profile Views</p>
+                <figure>
+                    <img src="./images/icon-instagram.svg " alt="instagram ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">52k</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <p class="up">1375%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary ">
+            <div>
+                <p class="childSecondary__title">Retweets</p>
+                <figure>
+                    <img src="./images/icon-twitter.svg " alt="twitter ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">117</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <p class="up">303%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary ">
+            <div>
+                <p class="childSecondary__title">Likes</p>
+                <figure>
+                    <img src="./images/icon-twitter.svg " alt="twitter ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">507</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-up.svg" alt="">
+                    </figure>
+                    <p class="up">553%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary ">
+            <div>
+                <p class="childSecondary__title">Likes</p>
+                <figure>
+                    <img src="./images/icon-youtube.svg " alt="youTube ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">107</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-down.svg" alt="">
+                    </figure>
+                    <p class="down">19%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary ">
+            <div>
+                <p class="childSecondary__title">Total Views</p>
+                <figure>
+                    <img src="./images/icon-youtube.svg " alt="youTube ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number">1407</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-down.svg" alt="">
+                    </figure>
+                    <p class="down">12%</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
 </html>
