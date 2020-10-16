@@ -26,9 +26,10 @@ body {
     background-color: var(--White-BG);
 }
 
-* {
+
+/* * {
     border: red 1px solid;
-}
+} */
 
 header {
     padding: var(--scroll-gap);
@@ -275,7 +276,7 @@ input:checked+.slider:before {
 .childSecondary__number {
     font-size: 2rem;
     font-weight: 700;
-    margin: 1.2rem
+    margin: 1.2rem 0;
 }
 
 .childSecondary__number~div {

@@ -8,6 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/desktop1024.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="./styles/desktop1440.css" media="screen and (min-width: 1440px)">
     <title>Social Media Dashboard</title>
 </head>
 
@@ -17,19 +19,21 @@
             <h2>
                 Social Media Dashboard
             </h2>
-            <small>
-          Total Followers: 23,004
-        </small>
+            <article class="header__article">
+                <small>
+                Total Followers: 23,004
+                </small>
+                <div>
+                    <p>
+                        Dark Mode
+                    </p>
+                    <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                </div>
+            </article>
         </article>
-        <div>
-            <p>
-                Dark Mode
-            </p>
-            <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-        </div>
     </header>
     <section class="parent">
         <section class="child facebook">
