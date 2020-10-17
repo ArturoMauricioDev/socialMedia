@@ -26,6 +26,10 @@ header {
     margin: 0 1rem 0 0;
 }
 
+.header__div.dark {
+    border-top: none;
+}
+
 .parent {
     padding: var(--scroll-gap-v) var(--scroll-gap-h);
     display: flex;

@@ -13,23 +13,23 @@
     <title>Social Media Dashboard</title>
 </head>
 
-<body>
+<body id="dark" class="body light">
     <header>
         <article>
-            <h2>
+            <h2 class="header__h2 light">
                 Social Media Dashboard
             </h2>
             <article class="header__article">
-                <small>
+                <small class="header__small light">
                 Total Followers: 23,004
                 </small>
-                <div>
+                <div class="header__div light">
                     <p>
                         Dark Mode
                     </p>
                     <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
+                  <input id="switch" type="checkbox">
+                  <span class="slider light round"></span>
                 </label>
                 </div>
             </article>
@@ -37,16 +37,16 @@
     </header>
     <section class="parent">
         <section class="child facebook">
-            <div class="container">
+            <div class="container light">
                 <div class="container__header">
                     <figure>
                         <img src="./images/icon-facebook.svg" alt="facebook">
                     </figure>
-                    <p>@nathanf</p>
+                    <p class="container__header__p light">@nathanf</p>
                 </div>
                 <div class="container__main">
-                    <h1>1987</h1>
-                    <h2>Followers</h2>
+                    <h1 class="container__main__h1 light">1987</h1>
+                    <h2 class="container__main__h2 light">Followers</h2>
                 </div>
                 <div class="container__footer">
                     <figure>
@@ -57,16 +57,16 @@
             </div>
         </section>
         <section class="child twitter">
-            <div class="container">
+            <div class="container light">
                 <div class="container__header">
                     <figure>
                         <img src="./images/icon-twitter.svg" alt="twitter">
                     </figure>
-                    <p>@nathanf</p>
+                    <p class="container__header__p light">@nathanf</p>
                 </div>
                 <div class="container__main">
-                    <h1>1044</h1>
-                    <h2>Followers</h2>
+                    <h1 class="container__main__h1 light">1044</h1>
+                    <h2 class="container__main__h2 light">Followers</h2>
                 </div>
                 <div class="container__footer">
                     <figure>
@@ -77,16 +77,16 @@
             </div>
         </section>
         <section class="child instagram">
-            <div class="container">
+            <div class="container light">
                 <div class="container__header">
                     <figure>
                         <img src="./images/icon-instagram.svg" alt="instagram">
                     </figure>
-                    <p>@realnathanf</p>
+                    <p class="container__header__p light">@realnathanf</p>
                 </div>
                 <div class="container__main">
-                    <h1>11k</h1>
-                    <h2>Followers</h2>
+                    <h1 class="container__main__h1 light">11k</h1>
+                    <h2 class="container__main__h2 light">Followers</h2>
                 </div>
                 <div class="container__footer">
                     <figure>
@@ -97,16 +97,16 @@
             </div>
         </section>
         <section class="child youTube">
-            <div class="container">
+            <div class="container light">
                 <div class="container__header">
                     <figure>
                         <img src="./images/icon-youtube.svg" alt="youTube">
                     </figure>
-                    <p>Nathan F.</p>
+                    <p class="container__header__p light">Nathan F.</p>
                 </div>
                 <div class="container__main">
-                    <h1>8239</h1>
-                    <h2>Subscribers</h2>
+                    <h1 class="container__main__h1 light">8239</h1>
+                    <h2 class="container__main__h2 light">Subscribers</h2>
                 </div>
                 <div class="container__footer">
                     <figure>
@@ -117,70 +117,70 @@
             </div>
         </section>
     </section>
-    <h2 class="secondaryTitle">
+    <h2 class="secondaryTitle light">
         Overview - Today
     </h2>
     <section class="parentSecondary">
-        <section class="childSecondary">
+        <section class="childSecondary light">
             <div>
-                <p class="childSecondary__title">Page Views</p>
+                <p class="childSecondary__title light">Page Views</p>
+                <figure>
+                    <img src=" ./images/icon-facebook.svg " alt="facebook ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number light">87</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-up.svg " alt=" ">
+                    </figure>
+                    <p class="up ">3%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary light ">
+            <div>
+                <p class="childSecondary__title light">Likes</p>
                 <figure>
                     <img src="./images/icon-facebook.svg" alt="facebook">
                 </figure>
             </div>
             <div>
-                <p class="childSecondary__number">87</p>
+                <p class="childSecondary__number light">52</p>
                 <div>
                     <figure>
-                        <img src="./images/icon-up.svg" alt="">
+                        <img src=" ./images/icon-down.svg " alt=" ">
                     </figure>
-                    <p class="up">3%</p>
+                    <p class="down ">2%</p>
                 </div>
             </div>
         </section>
-        <section class="childSecondary">
+        <section class=" childSecondary light ">
             <div>
-                <p class="childSecondary__title">Likes</p>
+                <p class="childSecondary__title light ">Likes</p>
                 <figure>
-                    <img src="./images/icon-facebook.svg" alt="facebook">
+                    <img src=" ./images/icon-instagram.svg " alt="instagram ">
                 </figure>
             </div>
             <div>
-                <p class="childSecondary__number">52</p>
+                <p class="childSecondary__number light ">5462</p>
                 <div>
                     <figure>
-                        <img src="./images/icon-down.svg" alt="">
+                        <img src="./images/icon-up.svg " alt=" ">
                     </figure>
-                    <p class="down">2%</p>
+                    <p class="up ">2257%</p>
                 </div>
             </div>
         </section>
-        <section class=" childSecondary ">
+        <section class="childSecondary light ">
             <div>
-                <p class="childSecondary__title">Likes</p>
-                <figure>
-                    <img src="./images/icon-instagram.svg " alt="instagram ">
-                </figure>
-            </div>
-            <div>
-                <p class="childSecondary__number">5462</p>
-                <div>
-                    <figure>
-                        <img src="./images/icon-up.svg" alt="">
-                    </figure>
-                    <p class="ups">2257%</p>
-                </div>
-            </div>
-        </section>
-        <section class="childSecondary ">
-            <div>
-                <p class="childSecondary__title">Profile Views</p>
+                <p class="childSecondary__title light ">Profile Views</p>
                 <figure>
                     <img src="./images/icon-instagram.svg " alt="instagram ">
                 </figure>
             </div>
             <div>
-                <p class="childSecondary__number">52k</p>
+                <p class="childSecondary__number light">52k</p>
                 <div>
                     <figure>
                         <img src="./images/icon-up.svg" alt="">
@@ -189,66 +189,66 @@
                 </div>
             </div>
         </section>
-        <section class="childSecondary ">
+        <section class="childSecondary light">
             <div>
-                <p class="childSecondary__title">Retweets</p>
+                <p class="childSecondary__title light">Retweets</p>
+                <figure>
+                    <img src=" ./images/icon-twitter.svg " alt="twitter ">
+                </figure>
+            </div>
+            <div>
+                <p class="childSecondary__number light">117</p>
+                <div>
+                    <figure>
+                        <img src="./images/icon-up.svg " alt=" ">
+                    </figure>
+                    <p class="up ">303%</p>
+                </div>
+            </div>
+        </section>
+        <section class="childSecondary light ">
+            <div>
+                <p class="childSecondary__title light">Likes</p>
                 <figure>
                     <img src="./images/icon-twitter.svg " alt="twitter ">
                 </figure>
             </div>
             <div>
-                <p class="childSecondary__number">117</p>
+                <p class="childSecondary__number light">507</p>
                 <div>
                     <figure>
-                        <img src="./images/icon-up.svg" alt="">
+                        <img src=" ./images/icon-up.svg " alt=" ">
                     </figure>
-                    <p class="up">303%</p>
+                    <p class="up ">553%</p>
                 </div>
             </div>
         </section>
-        <section class="childSecondary ">
+        <section class="childSecondary light ">
             <div>
-                <p class="childSecondary__title">Likes</p>
+                <p class="childSecondary__title light ">Likes</p>
                 <figure>
-                    <img src="./images/icon-twitter.svg " alt="twitter ">
+                    <img src=" ./images/icon-youtube.svg " alt="youTube ">
                 </figure>
             </div>
             <div>
-                <p class="childSecondary__number">507</p>
+                <p class="childSecondary__number light ">107</p>
                 <div>
                     <figure>
-                        <img src="./images/icon-up.svg" alt="">
+                        <img src="./images/icon-down.svg " alt=" ">
                     </figure>
-                    <p class="up">553%</p>
+                    <p class="down ">19%</p>
                 </div>
             </div>
         </section>
-        <section class="childSecondary ">
+        <section class="childSecondary light ">
             <div>
-                <p class="childSecondary__title">Likes</p>
-                <figure>
-                    <img src="./images/icon-youtube.svg " alt="youTube ">
-                </figure>
-            </div>
-            <div>
-                <p class="childSecondary__number">107</p>
-                <div>
-                    <figure>
-                        <img src="./images/icon-down.svg" alt="">
-                    </figure>
-                    <p class="down">19%</p>
-                </div>
-            </div>
-        </section>
-        <section class="childSecondary ">
-            <div>
-                <p class="childSecondary__title">Total Views</p>
+                <p class="childSecondary__title light ">Total Views</p>
                 <figure>
                     <img src="./images/icon-youtube.svg " alt="youTube ">
                 </figure>
             </div>
             <div>
-                <p class="childSecondary__number">1407</p>
+                <p class="childSecondary__number light">1407</p>
                 <div>
                     <figure>
                         <img src="./images/icon-down.svg" alt="">
@@ -259,5 +259,6 @@
         </section>
     </section>
 </body>
+<script src="./src/index.js"></script>
 
 </html>
