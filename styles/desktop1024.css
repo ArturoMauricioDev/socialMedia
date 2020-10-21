@@ -38,6 +38,7 @@ header {
 
 .child {
     width: 16.5vw;
+    min-width: 19vw;
 }
 
 .child:last-child {
@@ -57,6 +58,7 @@ header {
 
 .childSecondary {
     width: 16.5vw;
+    min-width: 19vw;
 }
 
 .childSecondary:last-child {

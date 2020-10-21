@@ -1,3 +1,13 @@
 :root {
     --scroll-gap-h: 12.5rem;
 }
+
+.child {
+    width: 16.5vw;
+    min-width: initial;
+}
+
+.childSecondary {
+    width: 16.5vw;
+    min-width: initial;
+}
