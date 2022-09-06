@@ -1,18 +1,30 @@
-# Escuela de Desarrollo Web by Platzi - Social media dashboard with theme switcher
+# Social media dashboard with theme switcher
+Es un proyecto que tiene como objetivo aplicar la maquetación en `HTML`, `CSS` y `JavaScript`. El proyecto forma parte de la escuela de Desarrollo Web de Platzi utilizando el challenge de Frontend Mentor.
 
-![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)
+## Tabla de Contenidos
+  - [Descripción](#descripción)
+    * [Mobile](#para-mobile)
+    * [Desktop](#para-desktop)
+    * [El reto](#el-reto)
+    * [Créditos por el diseño y reto](#créditos-por-el-diseño-y-reto)
+  - [Construcción del proyecto](#construcción-del-proyecto)
+    * [Estructura HTML](#estructura-html)
+    * [Estilos en CSS](#estilos-en-css)
+    * [Manipulando el DOM con JavaScript](#manipulando-el-dom-con-javascript)
+   - [Licencia](#licencia)
+   - [Autor](#autor)
+   
+## Descripción
+Este proyecto realizará la maquetación del siguiente reto en `HTML`, `CSS` y `JavaScript` considerando los siguientes requerimientos:
 
-## Bienvenida/o 👋
+### Para mobile
+![Design preview for the Room homepage coding challenge - mobile](./design/mobile-design.jpg)
+### Para desktop
+![Design preview for the Room homepage coding challenge - desktop](./design/desktop-preview.jpg)
 
-Los retos que encontarás semana a semana permiten mejorar tus habilidades en un flujo de trabajo de la vida real.
+### El reto
 
-Estás lista/o?
-
-**Para realizar este reto, necesita un conocimiento básico de HTML, CSS y un poco de JavaScript, recomendamos el Curso Definitivo de HTML y CSS**
-
-## El reto
-
-Tu reto es construir esta página inicial de una e-commerce y lograr que se parezca lo más posible al diseño.
+El reto consiste en construir esta página inicial y que se parezca lo más posible al diseño.
 
 Los usuarios deberían poder:
 
@@ -20,35 +32,94 @@ Los usuarios deberían poder:
 - Ver el efecto hover para todos los elementos interactivos de la página
 - Cambiar el tema de color de su preferencia
 
-## ¿Donde encontrar todo?
+También se utilizó el archivo de `style-guide.md`, que contiene la información necesaria, de la paleta de colores y fuentes.
 
-Tu tarea es realizar el reto con los diseños dentro de la carpeta `/design`. Ahí encontrará una versión móvil y de escritorio del diseño a trabajar.
+### Créditos por el diseño y reto
 
-Los diseños están en formato estático JPG. Esto significa que deberá utilizar su mejor criterio para estilos como `font-size`, `padding` y `margin`. Esto debería ayudar a entrenar su ojo para percibir las diferencias en los espacios y tamaños.
+Este reto pertenece a la lista de retos de [Frontend Mentor](https://www.frontendmentor.io/dashboard). Para más información  puede visitar [este enlace](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). 
 
-Encontrará todos los assets necesarios en la carpeta de `/images`. Los assets ya están optimiza.
+## Construcción del proyecto
 
-También hay un archivo de `style-guide.md`, que contiene la información necesaria, como la paleta de colores y fuentes.
+Se construyó utilizando la metodología `mobile first` para dispositivos de 375px, 1024px y 1440px. Asimismo, para los estilos se hace el uso de la metodología `BEM`. También se utiliza `JavaScript` Vanilla para la `manipulación del DOM` haciendo funcional el theme switcher para cambiar el color del tema de acuerdo con su preferencia.
 
-## Construyendo tu proyecto
+A continuación se mostrará algunos detalles y buenas prácticas:
 
-No dudes en utilizar cualquier flujo de trabajo con el que te sienta más cómoda/o. A continuación te muestro el proceso sugerido, pero toma esto como sugerencia y no regla:
+### Estructura HTML
 
-1. Clona éste repo en un repo público desde tu [GitHub](https://github.com/). Esto hará que sea más fácil compartir tu código con la comunidad si necesita ayuda. Si no está seguro de cómo hacer esto, [Lee este recurso - Prueba Git.](https://try.github.io/).
-2. Puedes configurar tu repositorio para utilizar GitHub Pages. Esto también será útil si necesita ayuda durante el reto, ya que puede compartir la URL de tu proyecto con la URL de tu repositorio. Hay varias formas de hacer esto, pero recomendamos usar [GitHub Pages](https://pages.github.com/).
-3. Mira los diseños para comenzar a planificar cómo abordará el proyecto. Este paso es crucial para ayudarte a pensar en las clases de CSS que podría crear para hacer estilos reutilizables.
-4. Antes de agregar cualquier estilo, estructura tu contenido con HTML. Crear la arquitectura de tu HTML primero puede ayudarte a centrar tu atención en la estructura de tu contenido.
-5. Escriba los estilos base para tu proyecto, incluidos los estilos de contenido general, como `font-family` y `font-size`.
+*Carga independiente de las hojas de estilos.*
 
-## Compartenos tu resultado
+```
+<link rel="stylesheet" href="./styles/style.css">
+<link rel="stylesheet" href="./styles/desktop1024.css" media="screen and (min-width: 1024px)">
+<link rel="stylesheet" href="./styles/desktop1440.css" media="screen and (min-width: 1440px)">
+```
 
-1. Asegurate de tener tu reto terminado en GitHub y GitHub Pages.
-2. Deja el enlace a tu repo en este hilo.
-3. Compartenos en el grupo de Telegram de Escuela de Desarrollo Web el número del reto junto con la URL de tu reto del foro.
-4. Lanza un tweet a [Platzi](https://twitter.com/platzi) y [@degranda10](https://twitter.com/degranda10) con el hashtag #PlatziWebChallange mencionandonos la URL de tu hilo para que nosotros y toda la comunidad de Platzi podamos verlo y celebrar contigo.
+*Optimización de carga de imágenes según el dispositivo.*
 
-**Diviértete y disfruta creando éste reto!** 🚀
+```
+<picture>
+  <source media="(min-width:1024px)" srcset="./images/desktop-image-hero-1.jpg">
+  <img src="./images/mobile-image-hero-1.jpg" alt=""> 
+</picture>
+```
 
-## Créditos por el diseño y reto.
+### Estilos en CSS
 
-Este reto pertenece a la lista de retos de [Frontend Mentor](https://www.frontendmentor.io)
+*Uso de variables*
+```
+:root{
+    --DarkGray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
+    font-family: 'Spartan', sans-serif;
+}
+```
+
+*Uso de un toggle para el menú mobile*
+```
+.menu.toggle{
+    display: none;
+}
+
+.menu{
+    position: absolute;
+    background: var(--White);
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    transition: .3s;
+}
+```
+*Uso de flexbox*
+
+```
+.topContainer{
+    display: flex;
+    position: absolute;
+    width: 50%;
+}
+```
+
+### Manipulando el DOM con JavaScript
+
+*Uso de toggle para el menú*
+```
+let menu = document.getElementById('menu')
+let burger = document.getElementById('burger')
+let closeButton = document.getElementById('close')
+
+function toggleMenu(){
+    menu.classList.toggle('toggle')
+}
+
+burger.addEventListener('click', toggleMenu)
+closeButton.addEventListener('click', toggleMenu)
+```
+
+## Licencia
+> Este proyecto esta bajo la licencia de MIT.
+
+## Autor
+Made with 💜 by [ArturoMauricioDev](https://arturomauricio.bio.link/)
