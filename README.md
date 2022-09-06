@@ -18,7 +18,8 @@ Es un proyecto que tiene como objetivo aplicar la maquetación en `HTML`, `CSS` 
 Este proyecto realizará la maquetación del siguiente reto en `HTML`, `CSS` y `JavaScript` considerando los siguientes requerimientos:
 
 ### Para mobile
-![Design preview for the Room homepage coding challenge - mobile](./design/mobile-design.jpg)
+![Design preview for the Room homepage coding challenge - mobile](./design/mobile-design-light.jpg)
+![Design preview for the Room homepage coding challenge - mobile](./design/mobile-design-dark.jpg)
 ### Para desktop
 ![Design preview for the Room homepage coding challenge - desktop](./design/desktop-preview.jpg)
 
